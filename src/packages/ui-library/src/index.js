@@ -26,7 +26,24 @@ function UIComponent() {
     const vNode = h("div", {}, [
       h(
         "h1",
-        { style: { backgroundColor: state.backgroundColor, padding: "4rem", margin:"2rem" } },
+        {
+          style: {
+            backgroundColor: state.backgroundColor,
+            padding: "4rem",
+            margin: "2rem",
+          },
+        },
+        "UI Library using Snabbdom and Lerna:"
+      ),
+      h(
+        "h1",
+        {
+          style: {
+            backgroundColor: state.backgroundColor,
+            padding: "4rem",
+            margin: "2rem",
+          },
+        },
         state.count
       ), // Initial value of 0
       h(
@@ -35,7 +52,7 @@ function UIComponent() {
           style: {
             padding: "1rem",
             fontSize: "36px",
-            margin:"2rem"
+            margin: "2rem",
           },
           on: {
             click: () =>
